@@ -28,9 +28,14 @@
       } else if (e.key === 'ArrowLeft') {
         left -= 10;
         player.style.left = left + 'px';
-      } else if (e.key === 'ArrowUp') {
-        up -= 10;
-        player.style.left = up + 'px';
+      } case 'ArrowUp':
+          topPosition -= 10;
+          player.style.top = topPosition + 'px';
+          break;
+        case 'ArrowDown':
+          topPosition += 10;
+          player.style.top = topPosition + 'px';
+          break;
     });
   </script>
 </body>
