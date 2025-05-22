@@ -28,15 +28,13 @@
       } else if (e.key === 'ArrowLeft') {
         left -= 10;
         player.style.left = left + 'px';
-      } case 'ArrowUp':
-          topPosition -= 10;
-          player.style.top = topPosition + 'px';
-          break;
-        case 'ArrowDown':
-          topPosition += 10;
-          player.style.top = topPosition + 'px';
-          break;
-    }
+      } else if (e.key === 'ArrowUp') {
+        topPosition -= 10;
+        player.style.top = topPosition + 'px';
+      } else if (e.key === 'ArrowDown') {
+        topPosition += 10;
+        player.style.top = topPosition + 'px';
+      }
     });
   </script>
 </body>
